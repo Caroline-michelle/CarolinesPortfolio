@@ -1,0 +1,121 @@
+body {
+  font-family: "helvetica", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1f5aa1;
+  color: white;
+}
+
+.headline {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 60px;
+  margin-top: 30px;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  color: white;
+}
+.name {
+  font-size: 3rem;
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 400;
+}
+
+.profilePic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #b0e0e6;
+}
+
+.name {
+  margin-top: 15px;
+}
+
+.hero p {
+  margin-top: 30px;
+  margin-bottom: 5rem;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+.project-content {
+  flex-grow: 1;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+  background-color: #a9cff4;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  color: #000000;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  max-width: 280px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: block;
+}
+
+.project-card h2 {
+  margin: 30px 0 20px;
+  color: #000000;
+}
+
+.project-card p {
+  margin: 0 0 30px;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.btn {
+  background-color: #1e4b7a;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #163b60;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: white;
+}
