@@ -3,92 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Caroline-Michelle Portfolio</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
-    <h1 class="headline">Portfolio</h1>
-    <main class="hero">
-      <img
-        src="Pictures/caroline.png"
-        alt="Caroline-Michelle"
-        class="profilePic"
-      />
-      <h2 class="name">Caroline-Michelle</h2>
-      <p class="edu">Frontend Developer | Photographer</p>
-    </main>
 
-    <section class="projects">
-      <div class="project-card">
-        <div class="project-content">
-          <img src="Pictures/rainydaysthumb.jpg" alt="Rainydays Thumbnail" />
+  <body>
+    <header class="header-strip">
+      <div class="logo">Caroline-Michelle</div>
+
+      <div class="social-links">
+        <a href="https://github.com/Caroline-michelle" target="_blank"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/caroline-michelle-martinussen-1b0667200/"
+          >LinkedIn</a
+        >
+      </div>
+
+      <div class="contact-info">postcarolinemichelle@gmail.com</div>
+    </header>
+
+    <main class="carousel-banner">
+      <button class="arrow left" id="prevBtn">&#10094;</button>
+
+      <div class="carousel-wrapper">
+        <div class="carousel-card left">
+          <img src="Pictures/artworks.png" alt="Project exam 1" />
+          <h2>Project exam 1 - Artworks gallery</h2>
+          <p>
+            Responsive artwork gallery with authentication and full CRUD
+            functionality using the Noroff API
+          </p>
+          <div class="buttons">
+            <a href="https://github.com/Caroline-michelle/Artworks1"
+              >Repository</a
+            >
+            <a href="https://caroline-michelle.github.io/Artworks1/"
+              >Live Demo</a
+            >
+          </div>
+        </div>
+
+        <div class="carousel-card center">
+          <img src="Pictures/rainydays.png" alt="Rainydays" />
           <h2>Rainydays</h2>
           <p>
-            A front-end webpage showcasing raincoats, using HTML and CSS for a
-            clean layout
+            Outdoor jacket store with clean design and simple shopping
+            experience.
           </p>
+          <div class="buttons">
+            <a href="https://github.com/Caroline-michelle/Rainydaysjs"
+              >Repository</a
+            >
+            <a href="https://caroline-michelle.github.io/Rainydaysjs/"
+              >Live Demo</a
+            >
+          </div>
         </div>
-        <div class="project-buttons">
-          <a
-            href="https://github.com/Caroline-michelle/rainydays"
-            class="btn"
-            target="_blank"
-            >GitHub</a
-          >
-          <a
-            href="https://caroline-michelle.github.io/Rainydaysjs/index.html"
-            class="btn"
-            target="_blank"
-            >Live Demo</a
-          >
-        </div>
-      </div>
 
-      <div class="project-card">
-        <div class="project-content">
-          <img src="Pictures/comming.jpg" alt="Semester Project 1" />
-          <h2>Semester Project 1</h2>
+        <div class="carousel-card right">
+          <img src="Pictures/adventure.png" alt=" Semester project 1" />
+          <h2>Semester project 1</h2>
           <p>
-            Comming soon! <br />
-            A static website based on HTML and CSS. An engaging, informative,
-            and user-friendly website for a new interactive science museum.
+            Designed and developed a responsive adventure travel website
+            featuring multiple pages, accessible navigation, and a consistent UI
+            design.
           </p>
-        </div>
-        <div class="project-buttons">
-          <a href="#" class="btn">GitHub</a>
-          <a href="#" class="btn">Live Demo</a>
+          <div class="buttons">
+            <a href="https://github.com/Caroline-michelle/Adventurewebsite"
+              >Repository</a
+            >
+            <a href="https://caroline-michelle.github.io/Adventurewebsite/"
+              >Live Demo</a
+            >
+          </div>
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-content">
-          <img src="Pictures/comming.jpg" alt="Exam Project 1" />
-          <h2>Exam Project 1</h2>
-          <p>
-            Comming soon!
-            <br />
-            A responsive web application that allows users to view dynamic blog
-            posts.
-          </p>
-        </div>
-        <div class="project-buttons">
-          <a href="#" class="btn">GitHub</a>
-          <a href="#" class="btn">Live Demo</a>
-        </div>
-      </div>
-    </section>
+      <button class="arrow right" id="nextBtn">&#10095;</button>
+    </main>
 
-    <footer>
-      <p>
-        Contact: postcarolinemichelle@gmail.com | GitHub:
-        https://github.com/Caroline-michelle
-      </p>
-    </footer>
+    <script src="index.js"></script>
   </body>
 </html>
